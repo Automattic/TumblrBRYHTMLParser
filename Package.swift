@@ -4,8 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "BRYHTMLParser",
-    platforms: [.iOS(.v13)],
+    name: "BRYHTMLParser",    
     products: [
         .library(
             name: "BRYHTMLParser",
@@ -16,6 +15,7 @@ let package = Package(
             name: "BRYHTMLParser",
             dependencies: [],
             path: "BRYHTMLParser",
+            exclude: ["Info.plist"],
             publicHeadersPath: "include")
     ]
 )
